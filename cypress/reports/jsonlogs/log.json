@@ -14,7 +14,7 @@
             "line": 4,
             "name": "I create an user",
             "result": {
-              "duration": 635000000,
+              "duration": 662000000,
               "status": "passed"
             },
             "match": {
@@ -76,7 +76,7 @@
             "line": 13,
             "name": "I get user by username",
             "result": {
-              "duration": 132000000,
+              "duration": 134000000,
               "status": "passed"
             },
             "match": {
@@ -96,7 +96,7 @@
             "line": 15,
             "name": "The user should contain",
             "result": {
-              "duration": 14000000,
+              "duration": 15000000,
               "status": "passed"
             },
             "match": {
@@ -174,7 +174,7 @@
             "line": 29,
             "name": "I create an user",
             "result": {
-              "duration": 137000000,
+              "duration": 135000000,
               "status": "passed"
             },
             "match": {
@@ -236,7 +236,7 @@
             "line": 38,
             "name": "I get user by username",
             "result": {
-              "duration": 130000000,
+              "duration": 129000000,
               "status": "passed"
             },
             "match": {
@@ -350,7 +350,7 @@
             "line": 56,
             "name": "I update some info",
             "result": {
-              "duration": 132000000,
+              "duration": 134000000,
               "status": "passed"
             },
             "match": {
@@ -382,7 +382,7 @@
             "line": 60,
             "name": "I get user by username",
             "result": {
-              "duration": 131000000,
+              "duration": 129000000,
               "status": "passed"
             },
             "match": {
@@ -402,7 +402,7 @@
             "line": 63,
             "name": "The user should contain",
             "result": {
-              "duration": 12000000,
+              "duration": 11000000,
               "status": "passed"
             },
             "match": {
@@ -480,7 +480,7 @@
             "line": 75,
             "name": "I create an user",
             "result": {
-              "duration": 132000000,
+              "duration": 131000000,
               "status": "passed"
             },
             "match": {
@@ -542,7 +542,7 @@
             "line": 85,
             "name": "I get user by username",
             "result": {
-              "duration": 130000000,
+              "duration": 128000000,
               "status": "passed"
             },
             "match": {
@@ -562,7 +562,7 @@
             "line": 87,
             "name": "The user should contain",
             "result": {
-              "duration": 6000000,
+              "duration": 5000000,
               "status": "passed"
             },
             "match": {
@@ -586,5 +586,195 @@
     "line": 1,
     "name": "Assignment for spriteCloud API Test",
     "uri": "cypress\\integration\\api\\create-user-scenario.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "assignment-for-spritecloud-ui-test---sample-app-scenario;scenario-1",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "scenario 1",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I access to sample app page",
+            "result": {
+              "duration": 804000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 5,
+            "name": "I fill the user access",
+            "result": {
+              "duration": 526000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "userName",
+                  "fernandogbaldo"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "pwd"
+                ]
+              }
+            ]
+          },
+          {
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I click to login",
+            "result": {
+              "duration": 84000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 9,
+            "name": "I click to logout",
+            "result": {
+              "duration": 91000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "assignment-for-spritecloud-ui-test---sample-app-scenario",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Assignment for spriteCloud UI Test - sample-app-scenario",
+    "uri": "cypress\\integration\\ui\\sample-app-scenario.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "assignment-for-spritecloud-ui-test---text-input-scenario;scenario-2",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "scenario 2",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I access to text input page",
+            "result": {
+              "duration": 447000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 5,
+            "name": "I input a text",
+            "result": {
+              "duration": 326000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "text",
+                  "spriteCloud"
+                ]
+              }
+            ]
+          },
+          {
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I click to updating the button",
+            "result": {
+              "duration": 102000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "assignment-for-spritecloud-ui-test---text-input-scenario",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Assignment for spriteCloud UI Test - text-input-scenario",
+    "uri": "cypress\\integration\\ui\\text-input-scenario.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "assignment-for-spritecloud-ui-test---verify-text-scenario;scenario-3",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "scenario 3",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I access to verify text page",
+            "result": {
+              "duration": 458000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 5,
+            "name": "I validate that contains 'Welcome UserName!'",
+            "result": {
+              "duration": 29000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "assignment-for-spritecloud-ui-test---verify-text-scenario",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Assignment for spriteCloud UI Test - verify-text-scenario",
+    "uri": "cypress\\integration\\ui\\verify-text-scenario.feature"
   }
 ]
