@@ -1,0 +1,25 @@
+{
+  "name": "sprintcloundapitest",
+  "version": "1.0.0",
+  "description": "API Automated Test",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open && npm run generateReport",
+    "test:api": "cypress run --spec cypress/integration/api/*.feature --browser chrome && npm run generateReport",
+    "test:ui": "cypress run --spec cypress/integration/ui/*.feature --browser chrome && npm run generateReport",
+    "test:all": "cypress run  --browser chrome && npm run generateReport",
+    "generateReport": "node scripts/cucumber-html-report.js"
+  },
+  "author": "Fernando G Baldo",
+  "license": "ISC",
+  "devDependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "cucumber-html-reporter": "^5.5.0",
+    "cypress": "^10.9.0",
+    "esbuild": "^0.15.9",
+    "multiple-cucumber-html-reporter": "^2.0.0"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^13.0.2"
+  }
+}

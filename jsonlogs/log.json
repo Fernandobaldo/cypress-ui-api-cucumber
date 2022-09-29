@@ -1,0 +1,590 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "assignment-for-spritecloud-api-test;1-create-and-validate-the-user-data",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "1 Create and validate the user data",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I create an user",
+            "result": {
+              "duration": 635000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "id",
+                  "1"
+                ]
+              },
+              {
+                "cells": [
+                  "username",
+                  "fernandobaldo1"
+                ]
+              },
+              {
+                "cells": [
+                  "firstName",
+                  "fernando"
+                ]
+              },
+              {
+                "cells": [
+                  "lastName",
+                  "baldo"
+                ]
+              },
+              {
+                "cells": [
+                  "email",
+                  "test@test.com"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "123"
+                ]
+              },
+              {
+                "cells": [
+                  "phone",
+                  "938632000"
+                ]
+              },
+              {
+                "cells": [
+                  "userStatus",
+                  "2"
+                ]
+              }
+            ]
+          },
+          {
+            "keyword": "When ",
+            "line": 13,
+            "name": "I get user by username",
+            "result": {
+              "duration": 132000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "usernamePath",
+                  "true"
+                ]
+              }
+            ]
+          },
+          {
+            "keyword": "Then ",
+            "line": 15,
+            "name": "The user should contain",
+            "result": {
+              "duration": 14000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "statusCode",
+                  "200"
+                ]
+              },
+              {
+                "cells": [
+                  "id",
+                  "true"
+                ]
+              },
+              {
+                "cells": [
+                  "username",
+                  "true"
+                ]
+              },
+              {
+                "cells": [
+                  "firstName",
+                  "true"
+                ]
+              },
+              {
+                "cells": [
+                  "lastName",
+                  "true"
+                ]
+              },
+              {
+                "cells": [
+                  "email",
+                  "true"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "true"
+                ]
+              },
+              {
+                "cells": [
+                  "phone",
+                  "true"
+                ]
+              },
+              {
+                "cells": [
+                  "userStatus",
+                  "true"
+                ]
+              }
+            ]
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "assignment-for-spritecloud-api-test;2-create-user-login-the-system-and-update-the-user-data",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "2 Create user login the system and update the user data",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 29,
+            "name": "I create an user",
+            "result": {
+              "duration": 137000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "id",
+                  "1"
+                ]
+              },
+              {
+                "cells": [
+                  "username",
+                  "fernandobaldo2"
+                ]
+              },
+              {
+                "cells": [
+                  "firstName",
+                  "fernando"
+                ]
+              },
+              {
+                "cells": [
+                  "lastName",
+                  "baldo"
+                ]
+              },
+              {
+                "cells": [
+                  "email",
+                  "test@test.com"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "123"
+                ]
+              },
+              {
+                "cells": [
+                  "phone",
+                  "938632000"
+                ]
+              },
+              {
+                "cells": [
+                  "userStatus",
+                  "2"
+                ]
+              }
+            ]
+          },
+          {
+            "keyword": "When ",
+            "line": 38,
+            "name": "I get user by username",
+            "result": {
+              "duration": 130000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "usernamePath",
+                  "true"
+                ]
+              }
+            ]
+          },
+          {
+            "keyword": "Then ",
+            "line": 40,
+            "name": "The user should contain",
+            "result": {
+              "duration": 11000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "statusCode",
+                  "200"
+                ]
+              },
+              {
+                "cells": [
+                  "id",
+                  "true"
+                ]
+              },
+              {
+                "cells": [
+                  "username",
+                  "true"
+                ]
+              },
+              {
+                "cells": [
+                  "firstName",
+                  "true"
+                ]
+              },
+              {
+                "cells": [
+                  "lastName",
+                  "true"
+                ]
+              },
+              {
+                "cells": [
+                  "email",
+                  "true"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "true"
+                ]
+              },
+              {
+                "cells": [
+                  "phone",
+                  "true"
+                ]
+              },
+              {
+                "cells": [
+                  "userStatus",
+                  "true"
+                ]
+              }
+            ]
+          },
+          {
+            "keyword": "Then ",
+            "line": 52,
+            "name": "I login into the system",
+            "result": {
+              "duration": 130000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "usernamePath",
+                  "true"
+                ]
+              },
+              {
+                "cells": [
+                  "passwordPath",
+                  "true"
+                ]
+              }
+            ]
+          },
+          {
+            "keyword": "And ",
+            "line": 56,
+            "name": "I update some info",
+            "result": {
+              "duration": 132000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstName",
+                  "Fernando"
+                ]
+              },
+              {
+                "cells": [
+                  "lastName",
+                  "Baldo"
+                ]
+              },
+              {
+                "cells": [
+                  "email",
+                  "Baldo@test.com"
+                ]
+              }
+            ]
+          },
+          {
+            "keyword": "And ",
+            "line": 60,
+            "name": "I get user by username",
+            "result": {
+              "duration": 131000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "usernamePath",
+                  "true"
+                ]
+              }
+            ]
+          },
+          {
+            "keyword": "And ",
+            "line": 63,
+            "name": "The user should contain",
+            "result": {
+              "duration": 12000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "statusCode",
+                  "200"
+                ]
+              },
+              {
+                "cells": [
+                  "id",
+                  "true"
+                ]
+              },
+              {
+                "cells": [
+                  "username",
+                  "true"
+                ]
+              },
+              {
+                "cells": [
+                  "firstName",
+                  "Fernando"
+                ]
+              },
+              {
+                "cells": [
+                  "lastName",
+                  "Baldo"
+                ]
+              },
+              {
+                "cells": [
+                  "email",
+                  "Baldo@test.com"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "true"
+                ]
+              },
+              {
+                "cells": [
+                  "phone",
+                  "true"
+                ]
+              },
+              {
+                "cells": [
+                  "userStatus",
+                  "true"
+                ]
+              }
+            ]
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "assignment-for-spritecloud-api-test;3-create-a-user-and-try-to-get-an-invalid-user",
+        "keyword": "Scenario",
+        "line": 74,
+        "name": "3 Create a user and try to GET an invalid user",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 75,
+            "name": "I create an user",
+            "result": {
+              "duration": 132000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "id",
+                  "1"
+                ]
+              },
+              {
+                "cells": [
+                  "username",
+                  "fernandobaldo3"
+                ]
+              },
+              {
+                "cells": [
+                  "firstName",
+                  "fernando"
+                ]
+              },
+              {
+                "cells": [
+                  "lastName",
+                  "baldo"
+                ]
+              },
+              {
+                "cells": [
+                  "email",
+                  "test@test.com"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "123"
+                ]
+              },
+              {
+                "cells": [
+                  "phone",
+                  "938632000"
+                ]
+              },
+              {
+                "cells": [
+                  "userStatus",
+                  "2"
+                ]
+              }
+            ]
+          },
+          {
+            "keyword": "When ",
+            "line": 85,
+            "name": "I get user by username",
+            "result": {
+              "duration": 130000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "usernamePath",
+                  "false"
+                ]
+              }
+            ]
+          },
+          {
+            "keyword": "Then ",
+            "line": 87,
+            "name": "The user should contain",
+            "result": {
+              "duration": 6000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "statusCode",
+                  "404"
+                ]
+              }
+            ]
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "assignment-for-spritecloud-api-test",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Assignment for spriteCloud API Test",
+    "uri": "cypress\\integration\\api\\create-user-scenario.feature"
+  }
+]
