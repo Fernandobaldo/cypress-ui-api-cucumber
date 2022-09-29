@@ -4,10 +4,11 @@
   "description": "API Automated Test",
   "main": "index.js",
   "scripts": {
-    "cy:open": "cypress open",
-    "test:api": "cypress run --spec cypress/integration/api/*.feature --browser chrome",
-    "test:ui": "cypress run --spec cypress/integration/ui/*.feature --browser chrome",
-    "test:all": "cypress run  --browser chrome"
+    "cy:open": "cypress open && npm run generateReport",
+    "test:api": "cypress run --spec cypress/integration/api/*.feature --browser chrome && npm run generateReport",
+    "test:ui": "cypress run --spec cypress/integration/ui/*.feature --browser chrome && npm run generateReport",
+    "test:all": "cypress run  --browser chrome && npm run generateReport",
+    "generateReport": "node scripts/cucumber-html-report.js"
   },
   "author": "Fernando G Baldo",
   "license": "ISC",
