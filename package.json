@@ -8,8 +8,10 @@
     "test:api": "cypress run --spec cypress/integration/api/*.feature --browser chrome",
     "test:ui": "cypress run --reporter mochawesome --spec cypress/integration/ui/*.feature --browser chrome",
     "test:all": "cypress run  --browser chrome",
-    "clean:reports": "node scripts/delete-reports.js"
-
+    "clean:reports": "node scripts/delete-reports.js",
+    "create:reportsfolder": "mkdirp cypress/reports/ && mkdirp cypress/reports/mochareports",
+    "combine:reports": "npx mochawesome-merge cypress/reports/mochawesome-report/*.json > cypress/reports/mochareports/report.json"
+    
   },
   "author": "Fernando G Baldo",
   "license": "ISC",
@@ -18,6 +20,7 @@
     "cypress": "^10.9.0",
     "cypress-mochawesome-reporter": "^3.2.2",
     "esbuild": "^0.15.9",
+    "mkdirp": "^1.0.4",
     "mocha": "^10.0.0",
     "mochawesome": "^7.1.3"
   },

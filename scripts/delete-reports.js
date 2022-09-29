@@ -1,2 +1,2 @@
 var rimraf = require("rimraf");
-rimraf("cypress/report/", function () { console.log("done"); });
+rimraf("cypress/reports/", function () { console.log("done"); });
