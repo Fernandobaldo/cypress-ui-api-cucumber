@@ -7,7 +7,7 @@ const createEsbuildPlugin =
 
 
 module.exports = defineConfig({
-  reporter: 'cypress-mochawesome-reporter',
+  reporter: 'mochawesome',
   e2e: {
     async setupNodeEvents(on, config) {
       const bundler = createBundler({
@@ -16,9 +16,17 @@ module.exports = defineConfig({
 
       on("file:preprocessor", bundler);
       await addCucumberPreprocessorPlugin(on, config);
-      require('cypress-mochawesome-reporter/plugin')(on);
+      
       return config;
     },
+
+    reporterOptions: {
+      "charts": true,
+      "overwrite": false,
+      "html": false,
+      "json": true,
+      "reportDir": "cypress/report/mochawesome-report"
+     },
 
     specPattern: "cypress/integration/**/*.feature",
     chromeWebSecurity: false,

@@ -6,8 +6,10 @@
   "scripts": {
     "cy:open": "cypress open",
     "test:api": "cypress run --spec cypress/integration/api/*.feature --browser chrome",
-    "test:ui": "cypress run --spec cypress/integration/ui/*.feature --browser chrome",
-    "test:all": "cypress run  --browser chrome"
+    "test:ui": "cypress run --reporter mochawesome --spec cypress/integration/ui/*.feature --browser chrome",
+    "test:all": "cypress run  --browser chrome",
+    "clean:reports": "node scripts/delete-reports.js"
+
   },
   "author": "Fernando G Baldo",
   "license": "ISC",
@@ -16,9 +18,11 @@
     "cypress": "^10.9.0",
     "cypress-mochawesome-reporter": "^3.2.2",
     "esbuild": "^0.15.9",
+    "mocha": "^10.0.0",
     "mochawesome": "^7.1.3"
   },
   "dependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "^13.0.2"
+    "@badeball/cypress-cucumber-preprocessor": "^13.0.2",
+    "fs-extra": "^10.1.0"
   }
 }
